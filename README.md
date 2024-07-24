@@ -1,4 +1,4 @@
-# Redis, Bull and Node.js
+# Redis, Bull, Bull Monitor and Node.js
 
 Publisher & Consumer examples using Redis and Bull with Express.
 
@@ -11,6 +11,8 @@ Publisher & Consumer examples using Redis and Bull with Express.
 **Back-end:** Typescript and Bull
 
 **Messaging/Caching:**: Redis
+
+**Monitor**: Bull Board
 
 **Test:** Jest
 
@@ -32,6 +34,12 @@ Download image Redis and up docker container
 
 ```bash
   docker-compose up -d
+```
+
+Run the redis queue monitor (make sure you install the dependencies first)
+
+```bash
+  cd monitor | npm run dev
 ```
 
 Run the consumer from the queue (make sure you install the dependencies first)
