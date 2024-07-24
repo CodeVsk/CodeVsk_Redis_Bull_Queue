@@ -1,0 +1,25 @@
+{
+  "name": "codevsk_redis_bull_queue",
+  "version": "1.0.0",
+  "description": "Node.js, Jest, Redis and Bull",
+  "scripts": {
+    "test": "jest",
+    "dev": "set NODE_ENV=development&& ts-node-dev --respawn --exit-child --transpile-only -r tsconfig-paths/register --ignore-watch node_modules src/main.ts"
+  },
+  "author": "CodeVsk",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^4.15.1",
+    "node-env": "^0.1.6",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.15.9",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3"
+  }
+}
